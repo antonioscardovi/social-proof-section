@@ -7,41 +7,84 @@
 }
 
 body {
+    height: 100vh;
     font-family: 'Spartan', sans-serif;
 }
 
+
 .top {
     background-image: url('/images/bg-pattern-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+
 .top-left {
+    flex-grow: 1;
+    flex-basis: 0;
     padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .top-left .title {
-    font-size: 38px;
+    color: hsl(300, 43%, 22%);
+    font-size: 42px;
     margin: 5px;
+}
+
+.top-left .description {
+    color: grey;
+    font-weight: 500
+}
+
+.top-right {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
 }
 
 .ratings {
     background-color: hsl(300, 24%, 96%);
-    margin: 10px;
-    padding: 10px;
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
 }
 
-.ratings p:before {
-    background-image: url('/images/icon-star.svg');
+.ratings .stars {
+    margin: 5px;
 }
 
-.top h1 {
+.ratings .text {
     color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin: 5px;
 }
+
+.rating-2 {
+    margin-left: 50px;
+}
+
+.rating-3 {
+    margin-left: 100px;
+}
+
+/* .ratings p:before {
+    background-image: url('/images/icon-star.svg');
+} */
+
 
 .bottom {
     background-image: url('/images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 50vh;
 }

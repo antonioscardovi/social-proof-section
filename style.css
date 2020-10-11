@@ -17,23 +17,23 @@ body {
     height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
 .top-left {
     flex-grow: 1;
     flex-basis: 0;
-    padding: 20px;
-    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-left: 180px;
 }
 
 .top-left .title {
     color: hsl(300, 43%, 22%);
     font-size: 52px;
     margin: 5px;
-    margin-left: 160px;
-    margin-right: 160px;
 }
 
 .top-left .description {
@@ -41,8 +41,6 @@ body {
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
-    margin-left: 160px;
-    margin-right: 180px;
 }
 
 .top-right {

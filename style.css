@@ -9,14 +9,11 @@
 body {
     height: 100vh; 
     font-family: 'Spartan', sans-serif;
+    background: url(images/bg-pattern-top-desktop.svg) top left no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
 }
 
 
 .top {
-    background-image: url('/images/bg-pattern-top-desktop.svg');
-    background-size: contain;
-    /* background-position: center; */
-    background-repeat: no-repeat;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -29,7 +26,6 @@ body {
     flex-basis: 0;
     padding: 20px;
     margin-left: 100px;
-    /* margin-right: 40px; */
 }
 
 .top-left .title {
@@ -88,16 +84,7 @@ body {
     margin-left: 120px;
 }
 
-/* .ratings p:before {
-    background-image: url('/images/icon-star.svg');
-} */
-
-
 .bottom {
-    background-image: url('/images/bg-pattern-bottom-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-position: center; */
     height: 50vh;
     display: flex;
     padding: 25px;

@@ -16,6 +16,7 @@ body {
     background-image: url('/images/bg-pattern-top-desktop.svg');
     background-size: contain;
     /* background-position: center; */
+    background-repeat: no-repeat;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -28,12 +29,12 @@ body {
     flex-basis: 0;
     padding: 20px;
     margin-left: 100px;
-    margin-right: 100px;
+    /* margin-right: 40px; */
 }
 
 .top-left .title {
     color: hsl(300, 43%, 22%);
-    font-size: 50px;
+    font-size: 52px;
     margin: 5px;
     margin-left: 160px;
     margin-right: 160px;
@@ -42,9 +43,10 @@ body {
 .top-left .description {
     color: grey;
     font-weight: 500;
+    font-size: 17px;
     line-height: 25px;
     margin-left: 160px;
-    margin-right: 160px;
+    margin-right: 180px;
 }
 
 .top-right {
@@ -56,14 +58,20 @@ body {
 .ratings {
     background-color: hsl(300, 24%, 96%);
     display: flex;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    width: 500px;
+    margin: 20px;
+    padding: 17px;
+    border-radius: 10px;
+    width: 510px;
 }
 
 .ratings .stars {
     margin: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.ratings .stars .star {
+    width: 20px;
 }
 
 .ratings .text {
@@ -73,11 +81,11 @@ body {
 }
 
 .rating-2 {
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 .rating-3 {
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 /* .ratings p:before {
@@ -88,27 +96,35 @@ body {
 .bottom {
     background-image: url('/images/bg-pattern-bottom-desktop.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    /* background-position: center; */
     height: 50vh;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+    padding: 25px;
+    justify-content: center;
 }
 
 .bottom .test {
     background-color: hsl(300, 43%, 22%);
-    padding: 20px;
-    height: 350px;
-    width: 500px;
+    padding: 42px;
+    height: 300px;
+    width: 450px;
     border-radius: 10px;
+    /* margin: 25px; */
+    margin-left: 50px;
+}
+
+.bottom .test .profile-pic {
+    height: 50px;
+    border-radius: 50px;
 }
 
 .bottom .test .name {
     color: hsl(0, 0%, 100%);
     font-weight: 500;
+    clear: right;
 }
+
 
 .bottom .test .status {
     color: hsl(333, 80%, 67%)
@@ -116,4 +132,14 @@ body {
 
 .bottom .test .testimony {
     color: hsl(300, 24%, 96%);
+    margin: 25px 10px 10px 15px;
+    line-height: 24px;
+}
+
+.testimonial-2 {
+    margin-top: 15px;
+}
+
+.testimonial-3 {
+    margin-top: 30px;
 }

@@ -111,29 +111,35 @@ body {
     width: 450px;
     border-radius: 10px;
     /* margin: 25px; */
-    margin-left: 50px;
+    margin-left: 45px;
 }
 
 .bottom .test .profile-pic {
     height: 50px;
     border-radius: 50px;
+    display: inline;
+    float: left;
 }
 
 .bottom .test .name {
     color: hsl(0, 0%, 100%);
     font-weight: 500;
-    clear: right;
+    text-align: center;
+    margin-right: 125px;
 }
 
 
 .bottom .test .status {
-    color: hsl(333, 80%, 67%)
+    color: hsl(333, 80%, 67%);
+    text-align: center;
+    margin-right: 125px;
+    margin-top: 5px;
 }
 
 .bottom .test .testimony {
     color: hsl(300, 24%, 96%);
-    margin: 25px 10px 10px 15px;
-    line-height: 24px;
+    margin: 45px 4px 4px 10px;
+    line-height: 26px;
 }
 
 .testimonial-2 {

@@ -107,11 +107,11 @@ body {
 .bottom .test {
     background-color: hsl(300, 43%, 22%);
     padding: 42px;
-    height: 300px;
+    height: 286px;
     width: 450px;
     border-radius: 10px;
     /* margin: 25px; */
-    margin-left: 45px;
+    margin-left: 42px;
 }
 
 .bottom .test .profile-pic {
@@ -138,8 +138,9 @@ body {
 
 .bottom .test .testimony {
     color: hsl(300, 24%, 96%);
-    margin: 45px 4px 4px 10px;
+    margin: 45px 4px 4px 5px;
     line-height: 26px;
+    font-size: 16px;
 }
 
 .testimonial-2 {

@@ -7,14 +7,15 @@
 }
 
 body {
-    height: 100vh; 
     font-family: 'Spartan', sans-serif;
     background: url(images/bg-pattern-top-desktop.svg) top left no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
 }
 
+section {
+    padding: 50px 250px 50px 250px;
+}
 
 .top {
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,13 +28,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 50px;
-    margin-left: 180px;
 }
 
 .top-left .title {
     color: hsl(300, 43%, 22%);
     font-size: 52px;
-    margin: 5px;
 }
 
 .top-left .description {
@@ -83,20 +82,17 @@ body {
 }
 
 .bottom {
-    height: 50vh;
     display: flex;
-    padding: 25px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bottom .test {
     background-color: hsl(300, 43%, 22%);
     padding: 42px;
-    height: 286px;
-    width: 450px;
+    max-height: 586px;
+    max-width: 450px;
     border-radius: 10px;
-    /* margin: 25px; */
-    margin-left: 42px;
 }
 
 .bottom .test .profile-pic {
@@ -136,10 +132,18 @@ body {
     margin-top: 32px;
 }
 
-@media only screen and (max-width: 768px) {
+.attribution {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 900px) {
     body {
         display: flex;
         flex-direction: column;
+    }
+
+    section {
+        padding: 25px;
     }
 
     .top {
@@ -148,22 +152,18 @@ body {
         justify-content: center;
         justify-items: center;
         text-align: center;
+        margin-bottom: 250px;
     }
 
     .top-left {
         flex-grow: unset;
         flex-basis: auto;
         padding: 5px;
-        margin-left: 0;
-        margin-top: 100px;
     }
     
     .top-left .title {
         color: hsl(300, 43%, 22%);
         font-size: 34px;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 20px;
     }
 
     .top-left .description {
@@ -171,14 +171,12 @@ body {
         font-weight: 500;
         font-size: 16px;
         line-height: 25px;
-        margin-left: 100px;
-        margin-right: 100px;
     }
 
     .top-right {
         flex-grow: 1;
         flex-basis: 0;
-        padding: 20px;
+        padding: 25px;
     }
     
     .ratings {
@@ -207,8 +205,20 @@ body {
     }
 
     .bottom .test {
-        width: 400px;
-        margin-left: 70px;
+        max-width: 500px;
+        margin: 10px auto;
+    }
+
+    .bottom .test .name {
+        text-align: center;
+        margin-right: 30px;
+    }
+    
+    
+    .bottom .test .status {
+        text-align: center;
+        margin-right: 30px;
+        margin-top: 5px;
     }
 
     .testimonial-2 {
@@ -217,6 +227,10 @@ body {
     
     .testimonial-3 {
         margin-top: 20px;
+    }
+
+    .attribution {
+        margin-top: 350px;
     }
 
   }
